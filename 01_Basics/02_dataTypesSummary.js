@@ -7,15 +7,14 @@ const PIE = 3.14
 const isLoggedIn = true
 const outsideTemp = null
 let userEmail;
+const bigNumber = 1234567890986433335456n
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
 console.log(id == anotherId); // prints false
 
-const bigNumber = 1234567890986433335456n
-
-/* Referenced (Non primitive)
+/* Referenced Types (Non primitive)
 Array, Objects, Functions
 */
 
