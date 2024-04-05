@@ -110,3 +110,9 @@ NaN -> NaN
 true -> true, false -> false
 "" -> whitespace
 */
+// *********************** Operations ***********************************************************
+
+console.log("1" + 2); // prints 12 (string + number = string)
+console.log(1 + "2"); // prints 12 (number + string = string)
+console.log("1" + 2 + 2); // prints 122 (string + number + number = string)
+console.log(1 + 2 + "2"); // prints 32 (number + number + string = addition of number + string)
