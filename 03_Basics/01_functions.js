@@ -1,5 +1,3 @@
-
-
 function sayMyName(){
     console.log("G");
     console.log("A");
