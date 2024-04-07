@@ -28,3 +28,42 @@ function loginUserMessage(username){
 }
 console.log(loginUserMessage("gaurav"));
 console.log(loginUserMessage()); // when value is not passed to function it returns undefined
+
+function calculateCartPrice(...num1){       // ... rest operator
+    return num1
+}
+
+console.log(calculateCartPrice(200, 300, 500));
+
+// passing object to the function
+
+const user = {
+    username: "gaurav",
+    price: 199
+}
+
+function handleObject(anyObject){
+    console.log(`username is ${anyObject.username} and the price is ${anyObject.price}`);
+}
+
+handleObject(user) // passing object "user" to function "handleObject"
+
+// another way of passing object to the function
+
+handleObject({
+    username: "Faizal",
+    price: 399
+})
+
+// passing array to the function
+
+const myNewArr = [100, 200, 300, 400, 500]
+
+function returnValue(getArr){
+    return getArr[2]
+}
+console.log("return array element: ", returnValue(myNewArr));
+
+// another way of passing array to the function
+
+console.log("new element: ", returnValue([100, 200, 300, 400, 500]));
