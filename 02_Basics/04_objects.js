@@ -31,3 +31,16 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+//******************************* Destructuring ************************************
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "Gaurav"
+}
+
+// course.courseInstructor
+
+const {courseInstructor : instructor} = course // destructuring of object
+console.log("Course Instructor:", instructor);
