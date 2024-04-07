@@ -1,0 +1,116 @@
+// Javascript Execution Context
+
+{
+    // Execution Context Types
+    Global Execution Context
+    Function Execution Context
+    Eval Execution Context (property of gloabl object)
+}
+
+* Execution of Javascript Execution Context
+
+Executes in 2 phases:
+
+1 -> Memory Creation Phase (allocates space for variables, functions, etc)
+2 -> Execution Phase
+
+// Example of Memory Creation Phase
+
+    let val1 = 10
+    let val2 = 5
+    function addNum(num1, num2){
+        let total = num1 + num2
+        return total
+    }
+    let result1 = addNum(val1, val2)
+    let result2 = addNum(5, 10)
+
+    // Execution of Memory Creation Phase
+
+    {
+        1. Global Execution allocates to 'this'
+
+        2. Memory Phase (collects all the variables and allocates the memory)
+            First cycle{
+            - val1 -> undefined
+            - val2 -> undefined
+            - addNum -> function definition
+            - result1 -> undefined
+            - result2 -> undefined}
+
+        3. Execution Phase
+         {
+            val1 -> 10
+            val2 -> 5
+            addNum -> creates own Execution Context
+                                                    {
+                                                        New Variable Environment
+                                                                    +
+                                                            Execution Thread
+                                                        (this execution context will be deleted once executed)
+                                                    }
+
+                                                    // phases for addNum
+                                                    1. Memory Phase
+                                                        {
+                                                            val1 -> undefined
+                                                            val2 -> undefined
+                                                            total -> undefined
+                                                        }
+                                                    
+                                                    2. Execution Phase
+                                                        {
+                                                            num1 -> 10
+                                                            num2 -> 5
+                                                            total -> 15
+                                                            // total returns in GEC
+                                                        }
+            result1 = 15
+            addNum -> creates own Execution Context
+                                                    {
+                                                        New Variable Environment
+                                                                    +
+                                                            Execution Thread
+                                                        (this execution context will be deleted once executed)
+                                                    }
+
+                                                    // phases for addNum
+                                                    1. Memory Phase
+                                                        {
+                                                            val1 -> undefined
+                                                            val2 -> undefined
+                                                            total -> undefined
+                                                        }
+                                                    
+                                                    2. Execution Phase
+                                                        {
+                                                            num1 -> 5
+                                                            num2 -> 10
+                                                            total -> 15
+                                                            // total returns in GEC
+                                                        }
+         }
+
+    Call Stack Example :
+    // in call stack LIFO style follows
+        {
+            function one(){
+                console.log("One)
+                two()
+            }
+
+            function two(){
+                console.log("Two)
+                three()
+            }
+
+            function three(){
+                console.log("Three)
+            }
+
+            one()
+            two()
+            three()
+        }
+
+    }
