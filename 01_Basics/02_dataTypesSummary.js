@@ -2,14 +2,16 @@
 String, Number, Boolean, null, undefined, NaN, Symbol, BigInt
 */
 
-const score = 100
-const PIE = 3.14
-const isLoggedIn = true
-const outsideTemp = null
-let userEmail;
-const bigNumber = 1234567890986433335456n
+// Examples of primitive data types
 
-const id = Symbol('123')
+const score = 100           // number
+const PIE = 3.14            // number
+const isLoggedIn = true     // boolean
+const outsideTemp = null    // null
+let userEmail;              // undefined
+const bigNumber = 1234567890986433335456n      // bigInt
+
+const id = Symbol('123')            // symbol
 const anotherId = Symbol('123')
 
 console.log(id == anotherId); // prints false
@@ -18,12 +20,17 @@ console.log(id == anotherId); // prints false
 Array, Objects, Functions
 */
 
+// array
 const heros = ["Shaktiman", "Naagraj", "Doga"]
+
+// object
 
 let myObj = {
     name: "Gaurav",
     age: 27
 }
+
+// function 
 
 const myFunction = function(){
     console.log("Hello Gaurav!");
