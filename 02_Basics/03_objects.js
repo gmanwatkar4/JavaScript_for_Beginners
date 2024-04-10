@@ -1,6 +1,5 @@
 // objects
-// Singleton - made from constructor 
-Object.create
+// Singleton - made from constructor (Object.create)
 
 // object literals
 
@@ -17,20 +16,20 @@ const jsUser ={
     lastLoginDay: ["Monday", "Saturday"]
 }
 
-console.log("Email:", jsUser.email);
-console.log("Email:", jsUser["email"]);
-console.log("full name:", jsUser["full name"]);
-console.log("mySymbol:", jsUser[mySymbol]);
+console.log("Email:", jsUser.email);    // Email: gm@gmail.com
+console.log("Email:", jsUser["email"]); // Email: gm@gmail.com
+console.log("full name:", jsUser["full name"]); // full name: Gaurav Manwatkar
+console.log("mySymbol:", jsUser[mySymbol]); // mySymbol: mykey1
 
 jsUser.email = "gm@yahoo.com"
-console.log("updated email:", jsUser.email);
+console.log("updated email:", jsUser.email);    // updated email: gm@yahoo.com
 
 jsUser.greeting = function(){
-    console.log("Hello js users....");
+    console.log("Hello js users....");  
 }
-console.log(jsUser.greeting());
+console.log(jsUser.greeting());     // Hello js users....
 
 jsUser.greetingTwo = function(){
     console.log(`Hello js user, ${this.name}`);
 }
-console.log(jsUser.greetingTwo());
+console.log(jsUser.greetingTwo());      // Hello js user, Gaurav
