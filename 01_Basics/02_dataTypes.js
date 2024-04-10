@@ -14,6 +14,8 @@
 
 *Non-Primitive*
 - object
+- functions
+- arrays
 */
 
 // Examples of Data Types
