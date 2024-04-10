@@ -1,7 +1,9 @@
 // Variables in JavaScript
 
-const accountID = 144553 // value cannot change
-let accountEmail = "gaurav@gmail.com"
+// three keywords used to create a variable - const, let and var
+
+const accountID = 144553                // value cannot change
+let accountEmail = "gaurav@gmail.com"   
 var accountPassword = "12345"
 accountCity = "Nagpur"
 
@@ -9,6 +11,8 @@ accountCity = "Nagpur"
 accountID = 2
 console.log(accountID); //cannot print accountID because its declared as constant
 */
+
+// changing the values of a variables
 
 accountEmail = "gm@yahoo.com"
 accountPassword = "21011996"
