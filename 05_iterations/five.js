@@ -1,3 +1,5 @@
+// for each loop
+
 const coading = ["js", "ruby", "java", "python", "cpp"]
 
 coading.forEach(function (item) {
