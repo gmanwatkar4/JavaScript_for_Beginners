@@ -1,5 +1,7 @@
 // switch statement
 
+// passing number
+
 const month = 3
 
 switch (month) {
@@ -10,7 +12,7 @@ switch (month) {
         console.log("feb");
         break;
     case 3:
-        console.log("march");
+        console.log("march");   // march
         break;
     case 4:
         console.log("april");
@@ -21,6 +23,8 @@ switch (month) {
         break;
 }
 
+// passing string 
+
 const myMonth = "march"
 switch (myMonth) {
     case "january":
@@ -30,7 +34,7 @@ switch (myMonth) {
         console.log("feb");
         break;
     case "march":
-        console.log("march");
+        console.log("march");   // march
         break;
     case "april":
         console.log("april");
@@ -40,4 +44,3 @@ switch (myMonth) {
         console.log("default case match");
         break;
 }
-
