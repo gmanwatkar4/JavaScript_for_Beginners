@@ -1,4 +1,4 @@
-// scope examples
+// scope in javascript
 
 let a = 40
 
@@ -6,14 +6,14 @@ if(true){
     let a = 10
     const b = 20
     //var c = 30
-    console.log("inner a: ", a); // local scope
+    console.log("inner a: ", a); // local scope - inner a:  10
 }
 
 // console.log(a); // error cause declared local scope
 // console.log(b); // declared in local scope
 // console.log(c); // prints 30 because var can be accessed anywhere
 
-console.log("outer a: ", a); // global scope
+console.log("outer a: ", a); // global scope - outer a:  40
 
 // note : in node environment scope acts differently, also same for windows environment (in ide level)
 
@@ -22,7 +22,7 @@ function one(){
 
     function two(){
         const website = "youtube"
-        console.log("username:", username);
+        console.log("username:", username);     // username: gaurav
     }
     // console.log(website);
 
@@ -37,7 +37,7 @@ if(true){
     const username = "gaurav"
     if(username === "gaurav"){
         const website = " youtube"
-        console.log(username + website);
+        console.log(username + website);    // gaurav youtube
     }
     // console.log(website);
 }
