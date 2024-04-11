@@ -7,10 +7,10 @@ const myTotal = myNums.reduce( function (acc, curval) {
     return acc + curval
 }, 0)
 
-console.log(myTotal);
+console.log(myTotal);   // 15
 
 const myTotal1 = myNums.reduce( (acc, curval) => acc+curval, 0)
-console.log(myTotal1);
+console.log(myTotal1);  // 15
 
 const shoppingCart = [
     {
@@ -32,4 +32,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce( (acc, item) => acc + item.price, 0)
-console.log(priceToPay);
+console.log(priceToPay);    // 12997
