@@ -1,4 +1,4 @@
-// for
+// for loop on number array
 
 for (let i = 0; i <= 10; i++) {
     const element = i;
@@ -15,6 +15,8 @@ for (let i = 1; i <= 10; i++) {
         console.log(i + ' * ' + j + ' = ' + i*j);
     }
 }
+
+// for loop on string arrays
 
 let myArray = ["flash", "batman", "superman"]
     console.log("myArray length: ", myArray.length);
