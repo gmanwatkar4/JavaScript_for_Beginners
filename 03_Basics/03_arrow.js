@@ -1,18 +1,22 @@
+// arrow => function in javascript
+
 const user = {
     username: "gaurav",
     price: 999,
 
     welcomeMessage: function(){
-        console.log(`${this.username}, welcome to the website!`);
+        console.log(`${this.username}, welcome to the website!`);   
         // console.log(this);
     }
 }
 
-user.welcomeMessage()
+user.welcomeMessage()   // // gaurav, welcome to the website!
 user.username = "sam"
-user.welcomeMessage()
+user.welcomeMessage()   // sam, welcome to the website!
 
-console.log(this); // current object is empty {} in node environment because we dont have any object in global
+// current object is empty {} in node environment because we dont have any object in global
+
+console.log(this);  // {}
 
 // in browser the global object is Window object
 
@@ -52,17 +56,17 @@ const addTwo = (num1, num2) => {       // if wrapped in curly braces we have to 
     return num1 + num2 // explicit return
 }
 
-console.log("addTwo:", addTwo(5, 6));
+console.log("addTwo:", addTwo(5, 6));   // addTwo: 11
 
 // implicit return
 
 const addThree = (num1, num2, num3) => num1 + num2 + num3
-console.log("addThree:", addThree(3, 3, 3));
+console.log("addThree:", addThree(3, 3, 3));    // addThree: 9
 
 const addFour = (num1, num2, num3, num4) => (num1 + num2 + num3 + num4) // dont have to return if wrapped in ()
-console.log("addFour:", addFour(3, 3, 4, 4));
+console.log("addFour:", addFour(3, 3, 4, 4));   // addFour: 14
 
 // return object
 
 const addOne = (num) => ({username: "gaurav"})
-console.log(addOne(5));
+console.log(addOne(5)); // { username: 'gaurav' }
