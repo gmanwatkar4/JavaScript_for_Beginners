@@ -1,4 +1,4 @@
-// for loop and map()
+// for loop on array and map()
 
 // ["", "", ""]
 // [{}, {}, {}]
