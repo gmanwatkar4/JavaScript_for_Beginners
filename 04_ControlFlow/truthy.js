@@ -1,7 +1,9 @@
+// truthy and falsy values
+
 const userEmail = "gm@gmail.com"
 
 if (userEmail) {
-    console.log("got user email");
+    console.log("got user email");  // got user email
 } else{
     console.log("dont have user email");
 }
@@ -13,10 +15,11 @@ if (userEmail) {
 // truthy values -> "0", 'false', " ", [], {}, function(){}
 
 // empty arrays checks
+
 const emptyArray = []
 
 if (emptyArray.length === 0) {
-    console.log("array is empty");
+    console.log("array is empty");  // array is empty
 }
 
 // empty object checks
@@ -24,7 +27,7 @@ if (emptyArray.length === 0) {
 const myObject = {}
 
 if (Object.keys(myObject).length === 0) {
-    console.log("object is empty");
+    console.log("object is empty");     // object is empty
 }
 
 // false == 0 -> true, false == '' -> true, 0 == '' -> true
@@ -36,7 +39,7 @@ val1 = null ?? 10
 val1 = undefined ?? 15
 val1 = null ?? 10 ?? 25
 
-console.log(val1);
+console.log(val1);  // 10
 
 // Terniary operator
 
@@ -44,4 +47,4 @@ console.log(val1);
 
 const iceTeaPrice = 100
 
-iceTeaPrice <= 80 ? console.log("less that 80") : console.log("more than 80");
+iceTeaPrice <= 80 ? console.log("less that 80") : console.log("more than 80");  // more than 80
