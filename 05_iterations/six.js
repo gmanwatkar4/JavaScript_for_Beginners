@@ -1,3 +1,7 @@
+// more on loops
+
+// using forEach()
+
 const coading = ["js", "ruby", "java", "python", "cpp"]
 
 const values = coading.forEach( (item) => {
@@ -20,6 +24,7 @@ const newNums1 = myNums.filter( (num) => {
 console.log(newNums);
 
 // using for each
+
 const newNums2 = []
 myNums.forEach( (nums) => {
     if (nums > 5) {
@@ -46,7 +51,6 @@ const books = [
   const userBooks = books.filter( (bk) => bk.genre === "History") 
   let userBooks1 = books.filter( (bk) => bk.publish >= 2000)
   let userBooks2 = books.filter( (bk) => bk.publish >= 1995 && bk.genre === "History")
-
 
   console.log(userBooks);
   console.log(userBooks1);
