@@ -6,17 +6,17 @@
 
 (function db1(){ 
     // db1 is a named IIFE, as function name is given
-    console.log(`DB1 connected...`);
+    console.log(`DB1 connected...`);    // DB1 connected...
 })(); // to end the execution we have to give ; at the end
 
 // to remove the global declaration polution we have to use IIFE 
 
 (() => {
-    console.log(`DB2 connected...`);
+    console.log(`DB2 connected...`);    // DB2 connected...
 })();
 
 // parameter to arrow function IIFE
 
 ((name) => {
-    console.log(`DB3 connected to ${name}...`);
+    console.log(`DB3 connected to ${name}...`); // DB3 connected to gaurav...
 })("gaurav")
